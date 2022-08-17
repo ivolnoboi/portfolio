@@ -4,9 +4,164 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Irina Volnoboi</title>
   </head>
   <body>
-    <h1>It's my portfolio website</h1>
+    <header class="header">
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#" class="main-nav-link">About</a></li>
+          <li><a href="#" class="main-nav-link">Skills</a></li>
+          <li><a href="#" class="main-nav-link">Projects</a></li>
+          <li><a href="#" class="main-nav-link">Certificates</a></li>
+          <li><a href="#" class="main-nav-link">Download CV</a></li>
+          <li><a href="#" class="main-nav-link">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-about">
+        <div class="about-text-box">
+          <h1 class="primary-heading">Hello, I'm a frontend developer</h1>
+          <p class="about-description">
+            I'm Irina Volnoboi and I'm junior frontend developer. I have a
+            Bachelor's degree in Fundamental Informatics and Computer
+            Technologies. And I'm really excited about creating beautiful
+            interfaces and programming.
+          </p>
+        </div>
+        <div class="about-img-box">
+          <img
+            src="img/my_photo.jpg"
+            alt="Photo"
+            class="about-img"
+            width="400"
+          />
+        </div>
+      </section>
+      <section class="section-skills">
+        <span class="subheading">skills & tools</span>
+        <h2 class="secondary-heading">What can I use</h2>
+        <ul class="skills">
+          <li class="skill">
+            <img src="img/logos/html.png" alt="HTML logo" class="skill-logo" />
+            <p class="skill-name">HTML</p>
+          </li>
+          <li class="skill">
+            <img src="img/logos/css.png" alt="CSS logo" class="skill-logo" />
+            <p class="skill-name">CSS</p>
+          </li>
+          <li class="skill">
+            <img
+              src="img/logos/js.png"
+              alt="JavaScript logo"
+              class="skill-logo"
+            />
+            <p class="skill-name">JavaScript</p>
+          </li>
+          <li class="skill">
+            <img src="img/logos/git.png" alt="Git logo" class="skill-logo" />
+            <p class="skill-name">Git</p>
+          </li>
+          <li class="skill">
+            <img
+              src="img/logos/github.png"
+              alt="GitHub logo"
+              class="skill-logo"
+            />
+            <p class="skill-name">GitHub</p>
+          </li>
+          <li class="skill">
+            <img
+              src="img/logos/vscode.png"
+              alt="Visual Studio Code logo"
+              class="skill-logo"
+            />
+            <p class="skill-name">VSCode</p>
+          </li>
+          <li class="skill">
+            <img
+              src="img/logos/responsive.png"
+              alt="Responsive design logo"
+              class="skill-logo"
+            />
+            <p class="skill-name">Responsive websites</p>
+          </li>
+          <li class="skill">
+            <img
+              src="img/logos/figma.png"
+              alt="Figma logo"
+              class="skill-logo"
+            />
+            <p class="skill-name">Figma</p>
+          </li>
+        </ul>
+      </section>
+      <section class="section-projects">
+        <h2 class="secondary-heading">Projects</h2>
+        <div href="#" class="project">
+          <img src="" alt="" class="project-img" />
+          <div class="project-info">
+            <h3 class="tertiary-heading">Project name</h3>
+            <a href="#" class="project-link btn">Visit</a>
+            <a href="#" class="project-github btn">GitHub</a>
+          </div>
+        </div>
+      </section>
+      <section class="section-certificates"></section>
+      <section class="section-cv">
+        <span class="subheading">CV</span>
+        <h2 class="secondary-heading">
+          If you wanna learn more about me, download my CV
+        </h2>
+        <a
+          href="https://drive.google.com/file/d/1tFJThF2XzOR_Q7puZnffRXWfpaTGf2Jg/view"
+          class="cv-link"
+          target="_blank"
+          >Download</a
+        >
+      </section>
+      <section class="section-contacts">
+        <h2 class="secondary-heading">Contact me</h2>
+        <div class="telegram">
+          <img
+            src="img/contacts/telegram.svg"
+            alt="Telegram logo"
+            class="contact-logo"
+          />
+          <a href="https://t.me/i_rina_l" class="telegram-link" target="_blank"
+            >Telegram</a
+          >
+        </div>
+        <div class="gmail">
+          <img
+            src="img/contacts/email.svg"
+            alt="Gmail logo"
+            class="contact-logo"
+          />
+          <a
+            href="mailto:irinavolnoboy@gmail.com"
+            class="gmail-link"
+            target="_blank"
+            >irinavolnoboy@gmail.com</a
+          >
+        </div>
+        <div class="whatsapp">
+          <img
+            src="img/contacts/whatsapp.svg"
+            alt="Whatsapp logo"
+            class="contact-logo"
+          />
+          <a
+            href="https://wa.me/79180317941"
+            class="whatsapp-link"
+            target="_blank"
+            >WhatsApp</a
+          >
+        </div>
+      </section>
+    </main>
   </body>
 </html>
