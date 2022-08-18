@@ -5,7 +5,7 @@ COLORS
 #321b15
 
 FONT SIZES (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 40 / 44 / 52 / 62 / 74 / 86 / 98
 
 LINE HEIGHT
 1 for primary heading
@@ -43,12 +43,28 @@ body {
 .container {
   max-width: 120rem;
   margin: 0 auto;
+  padding: 0 2.4rem;
 }
 
 .primary-heading {
   font-size: 5.2rem;
   font-weight: 700;
   margin-bottom: 3.2rem;
+}
+
+.secondary-heading {
+  font-size: 4.4rem;
+  font-weight: 700;
+  margin-bottom: 6.4rem;
+}
+
+.subheading {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #faab95;
+  margin-bottom: 1.2rem;
 }
 
 .pb-small {
@@ -91,6 +107,10 @@ body {
   background-color: #e5f5f3;
 }
 
+.header .container {
+  padding: 0;
+}
+
 .main-nav {
   background-color: #faab95;
   border-radius: 0 0 10px 10px;
@@ -124,6 +144,7 @@ body {
 
 .section-about {
   background-color: #e5f5f3;
+  border-bottom: 10px dotted #faab95;
 }
 
 .about-content {
@@ -141,11 +162,36 @@ body {
 .about-description {
   font-size: 2rem;
   line-height: 1.6;
-  margin-bottom: 4.8rem;
+  margin-bottom: 6.4rem;
+}
+
+/*******************************/
+/* SKILLS SECTION */
+/******************************/
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  /* column-gap: 12.8rem; */
+  row-gap: 6.4rem;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: center;
 }
 
 .skill-logo {
-  width: 50px;
+  width: 12rem;
+}
+
+.skill-name {
+  font-size: 1.8rem;
+  color: #321b15;
+  font-weight: 600;
 }
 
 .contact-logo {
