@@ -58,6 +58,11 @@ body {
   margin-bottom: 6.4rem;
 }
 
+.tertiary-heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
 .subheading {
   display: inline-block;
   text-transform: uppercase;
@@ -79,6 +84,10 @@ body {
   margin-bottom: 6.4rem;
 }
 
+.mb-big {
+  margin-bottom: 9.6rem;
+}
+
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -86,17 +95,15 @@ body {
   font-size: 2.4rem;
   font-weight: 600;
   padding: 20px 40px;
+  border-radius: 10px;
+  transition: all 0.3s;
   background-color: #faab95;
   color: #321b15;
-  border-radius: 10px;
-  margin-bottom: 4.8rem;
   border: 3px solid #faab95;
-  transition: all 0.3s;
 }
 
 .btn:hover,
 .btn:active {
-  background-color: #e5f5f3;
   color: #faab95;
 }
 
@@ -165,6 +172,16 @@ body {
   margin-bottom: 6.4rem;
 }
 
+.btn--about:link,
+.btn--about:visited {
+  margin-bottom: 4.8rem;
+}
+
+.btn--about:hover,
+.btn--about:active {
+  background-color: #e5f5f3;
+}
+
 /*******************************/
 /* SKILLS SECTION */
 /******************************/
@@ -192,6 +209,72 @@ body {
   font-size: 1.8rem;
   color: #321b15;
   font-weight: 600;
+}
+
+/*******************************/
+/* PROJECTS SECTION */
+/******************************/
+
+.section-projects {
+  background-color: #e5f5f3;
+  border-top: 10px dotted #faab95;
+  padding: 8rem 0 12.8rem 0;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6.4rem;
+}
+
+.project {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1.2rem 4.8rem rgb(0, 0, 0, 0.08);
+}
+
+.project-img {
+  width: 100%;
+}
+
+.project-info {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(50, 27, 21, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 1s;
+
+  /* Hide block */
+  /* Hide it visually */
+  opacity: 0;
+
+  /* Make it unaccessible to mouse and keyboard */
+  pointer-events: none;
+
+  /* Hide it from screenreaders */
+  visibility: hidden;
+}
+
+.project:hover .project-info {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.project .tertiary-heading {
+  color: #faab95;
+}
+
+.btn--project:hover,
+.btn--project:active {
+  background-color: transparent;
 }
 
 .contact-logo {
