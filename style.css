@@ -257,7 +257,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  transition: all 1s;
+  transition: all 0.8s;
 }
 
 .project:hover .hidden {
@@ -311,7 +311,7 @@ body {
   background-color: rgba(50, 27, 21, 0.9);
   display: flex;
   align-items: center;
-  transition: all 1s;
+  transition: all 0.8s;
 }
 
 .certificate-info .btn {
