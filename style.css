@@ -226,6 +226,7 @@ body {
 .section-projects {
   background-color: #e5f5f3;
   border-top: 10px dotted #faab95;
+  border-bottom: 10px dotted #faab95;
   padding: 8rem 0 12.8rem 0;
 }
 
@@ -316,6 +317,17 @@ body {
 
 .certificate-info .btn {
   margin: 0 auto;
+}
+
+/*******************************/
+/* CV SECTION */
+/******************************/
+
+.section-cv {
+  padding: 8rem 0;
+  background-color: #e5f5f3;
+  border-top: 10px dotted #faab95;
+  border-bottom: 10px dotted #faab95;
 }
 
 .contact-logo {
