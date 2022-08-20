@@ -330,6 +330,37 @@ body {
   border-bottom: 10px dotted #faab95;
 }
 
+/*******************************/
+/* CONTACTS SECTION */
+/******************************/
+
+.section-contacts {
+  padding: 9.6rem 0;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.btn--contacts:link,
+.btn--contacts:visited {
+  width: 27rem;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.contact-text {
+  font-size: 2rem;
+}
+
 .contact-logo {
-  width: 50px;
+  width: 30px;
 }
