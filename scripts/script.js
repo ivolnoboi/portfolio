@@ -1,5 +1,8 @@
 "use strict";
 
+/***********************/
+/* MODAL WINDOW */
+/***********************/
 const body = document.querySelector("body");
 const modal = document.querySelector(".modal");
 const modalImg = document.querySelector(".modal-img");
@@ -56,3 +59,26 @@ overlay.addEventListener("click", function () {
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !modal.classList.contains("hidden")) closeModal();
 });
+
+/****************************/
+/* NAVIGATION MOBILE MENU */
+/***************************/
+const header = document.querySelector(".header");
+const btnNav = document.querySelector(".btn-mobile-nav");
+
+btnNav.addEventListener("click", function () {
+  header.classList.toggle("nav-open");
+});
+
+const allLinks = document.querySelectorAll("a:link"); // It selects only anchor elements which have href attribute
+
+allLinks.forEach((link) =>
+  link.addEventListener("click", function (e) {
+    // Closing mobile navigation
+    if (
+      link.classList.contains("main-nav-link") &&
+      header.classList.contains("nav-open")
+    )
+      header.classList.remove("nav-open");
+  })
+);
