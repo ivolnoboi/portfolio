@@ -46,7 +46,7 @@
                 really excited about creating beautiful interfaces and
                 programming.
               </p>
-              <a href="#" class="btn btn--about">Contact me</a>
+              <a href="#contacts" class="btn btn--about">Contact me</a>
             </div>
           </div>
         </div>
@@ -162,7 +162,7 @@
                 class="certificate-img"
               />
               <div class="certificate-info hidden">
-                <a href="#" class="btn">Learn more</a>
+                <button id="btn1" class="btn">Learn more</button>
               </div>
             </div>
             <div class="certificate">
@@ -172,7 +172,7 @@
                 class="certificate-img"
               />
               <div class="certificate-info hidden">
-                <a href="#" class="btn">Learn more</a>
+                <button id="btn2" class="btn">Learn more</button>
               </div>
             </div>
             <div class="certificate">
@@ -182,7 +182,7 @@
                 class="certificate-img"
               />
               <div class="certificate-info hidden">
-                <a href="#" class="btn">Learn more</a>
+                <button id="btn3" class="btn">Learn more</button>
               </div>
             </div>
             <div class="certificate">
@@ -192,7 +192,7 @@
                 class="certificate-img"
               />
               <div class="certificate-info hidden">
-                <a href="#" class="btn">Learn more</a>
+                <button id="btn4" class="btn">Learn more</button>
               </div>
             </div>
             <div class="certificate">
@@ -202,7 +202,7 @@
                 class="certificate-img"
               />
               <div class="certificate-info hidden">
-                <a href="#" class="btn">Learn more</a>
+                <button id="btn5" class="btn">Learn more</button>
               </div>
             </div>
             <div class="certificate">
@@ -212,7 +212,7 @@
                 class="certificate-img"
               />
               <div class="certificate-info hidden">
-                <a href="#" class="btn">Learn more</a>
+                <button id="btn6" class="btn">Learn more</button>
               </div>
             </div>
             <div class="certificate">
@@ -222,11 +222,27 @@
                 class="certificate-img"
               />
               <div class="certificate-info hidden">
-                <a href="#" class="btn">Learn more</a>
+                <button id="btn7" class="btn">Learn more</button>
               </div>
             </div>
           </div>
         </div>
+        <div class="modal hidden">
+          <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <img src="img/certificates/" alt="Modal window" class="modal-img" />
+            <h3 class="tertiary-heading course-name"></h3>
+            <p class="modal-text mb-small">
+              from <span class="course-source"></span>
+            </p>
+            <p class="modal-text mb-middle">
+              Date: <span class="course-date"></span> <br />
+              <span class="course-description"></span>
+            </p>
+            <a href="#" class="btn cert-link" target="_blank">Download</a>
+          </div>
+        </div>
+        <div class="overlay hidden"></div>
       </section>
       <section class="section-cv" id="cv">
         <div class="container">
@@ -293,5 +309,7 @@
         </div>
       </section>
     </main>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
