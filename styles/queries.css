@@ -36,6 +36,10 @@ Instead, 1rem = 1em = 16px */
   html {
     font-size: 43.75%;
   }
+
+  .modal {
+    width: 90%;
+  }
 }
 
 @media (max-width: 40em) {
