@@ -149,4 +149,18 @@ Instead, 1rem = 1em = 16px */
     row-gap: 3.2rem;
     padding: 0 3.2rem;
   }
+
+  .skill-logo {
+    width: 8rem;
+  }
+}
+
+@media (max-width: 19em) {
+  .container {
+    padding: 0 1.2rem;
+  }
+
+  .skill-logo {
+    width: 6.5rem;
+  }
 }
