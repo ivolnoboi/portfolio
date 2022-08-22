@@ -109,7 +109,6 @@ allLinks.forEach((link) =>
 /***************************/
 
 const aboutSection = document.querySelector(".section-about");
-console.log(aboutSection);
 
 const obs = new IntersectionObserver(
   function (entries) {
