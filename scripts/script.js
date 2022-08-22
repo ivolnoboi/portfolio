@@ -103,3 +103,30 @@ allLinks.forEach((link) =>
       header.classList.remove("nav-open");
   })
 );
+
+/****************************/
+/* STICKY NAVIGATION */
+/***************************/
+
+const aboutSection = document.querySelector(".section-about");
+console.log(aboutSection);
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+
+    const bodyClasses = document.body.classList;
+    if (!ent.isIntersecting) {
+      bodyClasses.add("sticky");
+    } else {
+      bodyClasses.remove("sticky");
+    }
+  },
+  {
+    // In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-68px",
+  }
+);
+obs.observe(aboutSection);
