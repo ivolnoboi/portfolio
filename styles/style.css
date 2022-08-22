@@ -169,6 +169,38 @@ body {
   color: #fff;
 }
 
+.arrow-top-link:link,
+.arrow-top-link:visited {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #faab95;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 3px solid #faab95;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.arrow-top-link:hover,
+.arrow-top-link:active {
+  background-color: transparent;
+}
+
+.arrow-top-link:hover .arrow-top,
+.arrow-top-link:active .arrow-top {
+  color: #faab95;
+}
+
+.arrow-top {
+  font-size: 6rem;
+  color: #321b15;
+}
+
 /*************/
 /* MOBILE */
 /************/

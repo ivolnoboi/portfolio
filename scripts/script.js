@@ -70,10 +70,31 @@ btnNav.addEventListener("click", function () {
   header.classList.toggle("nav-open");
 });
 
+/****************************/
+/* SMOOTH SCROLLING */
+/***************************/
+
 const allLinks = document.querySelectorAll("a:link"); // It selects only anchor elements which have href attribute
 
 allLinks.forEach((link) =>
   link.addEventListener("click", function (e) {
+    const href = link.getAttribute("href");
+
+    if (href.startsWith("#")) e.preventDefault();
+
+    // Scroll back to top
+    if (href === "#")
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+
+    // Scroll to other links
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
     // Closing mobile navigation
     if (
       link.classList.contains("main-nav-link") &&
